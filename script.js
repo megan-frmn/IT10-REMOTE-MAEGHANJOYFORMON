@@ -13,3 +13,11 @@ sizeSelector.addEventListener("change", function(event){
     textElement.style.fontSize = selectedSize + "px";
     console.log(selectedSize);
 });
+
+const colorSelector = document.getElementById("color-selector");
+colorSelector.addEventListener("change", function(event){
+    const selectedColor = event.target.value;
+    const textElement = document.getElementById("text");
+    textElement.style.color = selectedColor;
+    console.log(selectedColor);
+});
